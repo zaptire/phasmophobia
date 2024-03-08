@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://crm73mm4genkq"]
 
-[ext_resource type="Material" uid="uid://dhjtrdxg45pwk" path="res://scrolling_material.tres" id="1_o16dv"]
+[ext_resource type="Material" uid="uid://dhjtrdxg45pwk" path="res://scrolling_text/scrolling_material.tres" id="1_e3ufc"]
 
 [node name="ScrollingText" type="RichTextLabel"]
-material = ExtResource("1_o16dv")
+material = ExtResource("1_e3ufc")
 custom_minimum_size = Vector2(240, 26)
 anchors_preset = 14
 anchor_top = 0.5

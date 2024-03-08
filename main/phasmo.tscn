@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bs87bd7eusv75"]
 
-[ext_resource type="Texture2D" uid="uid://ca5wy34ic0qi3" path="res://book.png" id="1_hp1xh"]
-[ext_resource type="Script" path="res://phasmo.gd" id="1_xevko"]
-[ext_resource type="PackedScene" uid="uid://cml12fyu270y" path="res://scrolling_text.tscn" id="2_dgllf"]
+[ext_resource type="Texture2D" uid="uid://ca5wy34ic0qi3" path="res://assets/textures/book.png" id="1_hp1xh"]
+[ext_resource type="Script" path="res://main/phasmo.gd" id="1_xevko"]
+[ext_resource type="PackedScene" uid="uid://cml12fyu270y" path="res://scrolling_text/scrolling_text.tscn" id="2_dgllf"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vifes"]
 content_margin_left = 13.0

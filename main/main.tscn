@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://capax4b3skhdf"]
 
-[ext_resource type="PackedScene" uid="uid://bs87bd7eusv75" path="res://phasmo.tscn" id="1_h8m65"]
-[ext_resource type="Script" path="res://main.gd" id="1_wwv7u"]
+[ext_resource type="PackedScene" uid="uid://bs87bd7eusv75" path="res://main/phasmo.tscn" id="1_h8m65"]
+[ext_resource type="Script" path="res://main/main.gd" id="1_wwv7u"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8shqk"]
 

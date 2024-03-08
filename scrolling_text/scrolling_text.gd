@@ -1,6 +1,6 @@
 extends Control
 
-const ScrollLabel = preload("res://scrolling_text_label.tscn")
+const ScrollLabel = preload("res://scrolling_text/scrolling_text_label.tscn")
 var padding = 120.0
 var count = 1
 #@onready var container := $VBoxContainer

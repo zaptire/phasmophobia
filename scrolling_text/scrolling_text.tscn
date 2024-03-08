@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cml12fyu270y"]
 
-[ext_resource type="Script" path="res://scrolling_text.gd" id="1_qt5rv"]
+[ext_resource type="Script" path="res://scrolling_text/scrolling_text.gd" id="1_qt5rv"]
 
 [node name="ScrollingText" type="Control"]
 clip_contents = true
