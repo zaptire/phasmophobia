@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://capax4b3skhdf"]
+
+[ext_resource type="PackedScene" uid="uid://bs87bd7eusv75" path="res://phasmo.tscn" id="1_h8m65"]
+[ext_resource type="Script" path="res://main.gd" id="1_wwv7u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8shqk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8yg5c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ko1oy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s4jn4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_spfrm"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wwv7u")
+
+[node name="Phasmo" parent="." instance=ExtResource("1_h8m65")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Button" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 214.0
+offset_top = 3.0
+offset_right = 237.0
+offset_bottom = 26.0
+mouse_filter = 1
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8shqk")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8yg5c")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ko1oy")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_s4jn4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_spfrm")
+text = "x"
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

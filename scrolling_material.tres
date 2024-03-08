@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dhjtrdxg45pwk"]
+
+[ext_resource type="Shader" path="res://scrolling_text.gdshader" id="1_ca3k8"]
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource("1_ca3k8")
+shader_parameter/size = 120.0
+shader_parameter/offset = 0.0
+shader_parameter/extra = 0.0

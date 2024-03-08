@@ -1,0 +1,95 @@
+[gd_scene load_steps=5 format=3 uid="uid://bs87bd7eusv75"]
+
+[ext_resource type="Texture2D" uid="uid://ca5wy34ic0qi3" path="res://book.png" id="1_hp1xh"]
+[ext_resource type="Script" path="res://phasmo.gd" id="1_xevko"]
+[ext_resource type="PackedScene" uid="uid://cml12fyu270y" path="res://scrolling_text.tscn" id="2_dgllf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vifes"]
+content_margin_left = 13.0
+content_margin_top = 8.0
+content_margin_right = 18.0
+content_margin_bottom = 8.0
+texture = ExtResource("1_hp1xh")
+
+[node name="Phasmo" type="PanelContainer"]
+custom_minimum_size = Vector2(240, 280)
+offset_right = 240.0
+offset_bottom = 280.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_vifes")
+script = ExtResource("1_xevko")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="VboxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Evidence1" type="Label" parent="MarginContainer/VboxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Evidence2" type="Label" parent="MarginContainer/VboxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Evidence3" type="Label" parent="MarginContainer/VboxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="Control" parent="MarginContainer/VboxContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="StableText" type="Label" parent="MarginContainer/VboxContainer/VBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -3.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "wadwa"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScrollingText1" parent="MarginContainer/VboxContainer/VBoxContainer" instance=ExtResource("2_dgllf")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -120.0
+offset_top = -30.0
+offset_right = 120.0
+offset_bottom = 22.0
+
+[node name="ScrollingText2" parent="MarginContainer/VboxContainer/VBoxContainer" instance=ExtResource("2_dgllf")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -120.0
+offset_top = -30.0
+offset_right = 120.0
+offset_bottom = 22.0
